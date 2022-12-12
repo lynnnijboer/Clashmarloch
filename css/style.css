@@ -270,7 +270,7 @@ body .image-block-reverse {
 body .image-block .row .image-block-img {
   overflow: hidden;
   padding: 0;
-  max-height: 440px;
+  max-height: 540px;
 }
 body .image-block .row .image-block-img img {
   height: auto;
