@@ -200,9 +200,9 @@
                 window.onscroll = function () {
                     var currentScrollPos = window.pageYOffset;
                     if (prevScrollpos > currentScrollPos) {
-                        document.querySelector(".nav").classList.remove('nav--closed')
+                        document.querySelector(".nav-container").classList.remove('nav-container--closed')
                     } else {
-                        document.querySelector(".nav").classList.add('nav--closed')
+                        document.querySelector(".nav-container").classList.add('nav-container--closed')
                     }
                     prevScrollpos = currentScrollPos;
                 }
