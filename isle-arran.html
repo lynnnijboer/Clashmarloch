@@ -65,6 +65,31 @@
         </ul>
     </nav>
 </div>
+<div class="shop">
+    <div class="shopping-cart">
+        <div class="wrapper">
+            <div class="header">
+                <h3 class="heading">Shopping Cart</h3>
+                <div class="end">
+                    <h5 class="action">Remove all</h5>
+                    <h5 class="close-btn">x</h5>
+                </div>
+            </div>
+
+            <div class="Cart-Items">
+                <div class="about">
+                    <h1 class="title">Tour</h1>
+                    <p class="subtitle">3 days</p>
+                    <img class="image" src="/img/schotland_11zon.jpg" width="200px">
+                </div>
+                <div class="counter"></div>
+                <div class="prices"></div>
+            </div>
+        </div>
+        <a href="#" class=""><button class="red-button">Pay now</button></a>
+    </div>
+    <div class="shopping-layout"></div>
+</div>
     <section class="hero">
         <div class="container-fluid">
             <div class="row">
@@ -74,7 +99,7 @@
                         <h1>Isle of Arran Adventure</h1>
                         <p class="mb-5">Explore 'Scotland in Miniature', the Isle of Arran, on this tour from Edinburgh.</p>
                         <div class="button-container d-flex">
-                            <a href="tours.html" class=""><button class="red-button">Book tour</button></a>
+                            <a href="tours.html" class=""><button class="red-button book-button">Book tour</button></a>
                         </div>
                     </div>
                 </div>
@@ -206,6 +231,18 @@
                     }
                     prevScrollpos = currentScrollPos;
                 }
+
+                const cart = document.querySelector('.shop');
+                    const bookButton = document.querySelector('.book-button');
+                    const closeButton = document.querySelector('.close-btn');
+
+                    bookButton.addEventListener('click', e => {
+                        cart.classList.add('active');
+                    });
+
+                    closeButton.addEventListener('click', e => {
+                        cart.classList.remove("active");
+                    });
         </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
