@@ -276,6 +276,7 @@ body .image-block .row .image-block-img img {
   height: auto;
   width: auto;
   max-height: 900px;
+  max-width: 1000px;
 }
 @media (max-width: 922px) {
   body .image-block .row .image-block-img {
