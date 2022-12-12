@@ -4,9 +4,10 @@
     .nav {
         position: relative;
         display: flex;
+        background-color: white;
         flex-wrap: wrap;
         align-items: center;
-        transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.3s;
 
         .nav-link {
             padding: 0.5rem 0.7rem;
@@ -23,7 +24,7 @@
         &.nav--closed {
             opacity: 0;
             transform: translateY(-100%);
-            transition: ease-in-out 0.5s;
+            transition: ease-in-out 0.3s;
         }
     }
 
