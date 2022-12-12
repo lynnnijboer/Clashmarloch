@@ -5,6 +5,10 @@
         flex-wrap: wrap;
         align-items: center;
 
+        .nav-link {
+            padding: 0.5rem 0.7rem;
+        }
+
         ul {
             margin-bottom: 0;
         }

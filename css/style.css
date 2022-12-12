@@ -109,6 +109,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.nav-container .nav .nav-link {
+  padding: 0.5rem 0.7rem;
+}
 .nav-container .nav ul {
   margin-bottom: 0;
 }
