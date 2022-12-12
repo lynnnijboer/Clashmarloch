@@ -1,0 +1,16 @@
+.roadmap {
+    .row {
+        padding: 200px 0;
+        justify-content: space-between;
+
+        .roadmap-block {
+            @media (max-width: 992px) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 100px 0px 50px 0;
+        }
+    }
+}

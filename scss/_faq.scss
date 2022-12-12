@@ -1,0 +1,27 @@
+.faq {
+    padding: 50px 0;
+
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
+
+    .faq-item {
+        padding: 20px 30px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            padding: 20px 0px;
+        }
+
+        .faq-item-answer {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .darker {
+        background-color: #fcfcfc;
+    }
+}

@@ -1,0 +1,33 @@
+body {
+    .image-block-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .image-block {
+        .row {
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+
+            .image-block-img {
+                overflow: hidden;
+                padding: 0;
+                max-height: 740px;
+
+                img {
+                    height: auto;
+                    width: auto;
+                    max-width: 1300px;
+                    max-height: 1200px;
+                }
+
+                @media (max-width: 922px) {
+                    max-height: 540px;
+                }
+            }
+            .text-block {
+                padding: 100px 0;
+            }
+        }
+    }
+}

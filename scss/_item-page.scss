@@ -1,0 +1,11 @@
+.double-text-block {
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
+
+    .row {
+        .text-block {
+            padding: 200px 0;
+        }
+    }
+}
