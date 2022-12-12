@@ -98,6 +98,10 @@ body {
   margin: 0 auto;
 }
 
+.nav-container {
+  position: fixed;
+  z-index: 1000;
+}
 .nav-container .nav {
   position: relative;
   display: -webkit-box;
@@ -108,6 +112,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 .nav-container .nav .nav-link {
   padding: 0.5rem 0.7rem;
@@ -119,6 +125,13 @@ body {
   .nav-container .nav {
     display: none;
   }
+}
+.nav-container .nav.nav--closed {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 .nav-container .mobile-nav {
   position: relative;
