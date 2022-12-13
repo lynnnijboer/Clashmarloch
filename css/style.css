@@ -232,6 +232,9 @@ footer .row .footer-text {
     padding: 100px 0;
   }
 }
+.hero .hero-textblock h1 {
+  font-size: 3rem;
+}
 .hero .hero-textblock p {
   max-width: 400px;
 }
@@ -391,7 +394,7 @@ body .image-block .row .text-block {
 }
 
 .tours {
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
 }
 @media (max-width: 768px) {
   .tours {
