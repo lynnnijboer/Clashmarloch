@@ -95,7 +95,7 @@
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
+                            How do we make our whisky?
                         </a>
                     </h4>
                 </div>
@@ -117,7 +117,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                             href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
+                            How long is the delivery time?
                         </a>
                     </h4>
                 </div>
@@ -139,7 +139,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                             href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            Collapsible Group Item #3
+                            What is our whisky made of?
                         </a>
                     </h4>
                 </div>
@@ -156,6 +156,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     </section>
@@ -217,15 +218,6 @@
                         closeAllPanels(accordionId);
                     }
                 })
-
-                openAllPanels = function (aId) {
-                    console.log("setAllPanelOpen");
-                    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-                }
-                closeAllPanels = function (aId) {
-                    console.log("setAllPanelclose");
-                    $(aId + ' .panel-collapse.in').collapse('hide');
-                }
 
             });
 
