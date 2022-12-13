@@ -476,51 +476,71 @@ body .image-block .row .text-block {
     padding: 0px;
   }
 }
-.faq .accordion .accordion-header {
-  padding: 0.828rem;
-  border-bottom: 1px solid var(--border-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
+.faq .panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.faq .accordion .accordion-header span {
-  font-size: 1.5rem;
-  font-weight: 600;
+.faq .panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px;
 }
-.faq .accordion .accordion-body {
-  padding: 0 0.828rem;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height ease 0.5s;
-  transition: max-height ease 0.5s;
-}
-.faq .accordion .accordion-body p {
-  border-bottom: none;
-  margin: 0.828rem 0;
-}
-.faq .accordion.active .accordion-body {
-  border-bottom: 1px solid var(--border-color);
-}
-.faq .close span {
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
+.faq .panel-default > .panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
   display: inline-block;
-  height: 12px;
-  width: 2px;
-  background-color: var(--dark-color);
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: -webkit-transform 0.25s linear;
+  transition: transform 0.25s linear;
+  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
+  -webkit-transition: -webkit-transform 0.25s linear;
 }
-.faq .close span:nth-child(even) {
-  -webkit-transform: rotate(90deg) translateY(6.7px);
-          transform: rotate(90deg) translateY(6.7px);
+.faq .panel-default > .panel-heading a[aria-expanded=true] {
+  background-color: #eee;
 }
-.faq .active .close span:nth-child(odd) {
-  opacity: 0;
-  visibility: hidden;
+.faq .panel-default > .panel-heading a[aria-expanded=true]:after {
+  content: "−";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.faq .panel-default > .panel-heading a[aria-expanded=false]:after {
+  content: "+";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.faq .accordion-option {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 15px 0;
+}
+.faq .accordion-option .title {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.faq .accordion-option .toggle-accordion {
+  float: right;
+  font-size: 16px;
+  color: #6a6c6f;
+}
+.faq .accordion-option .toggle-accordion:before {
+  content: "Expand All";
+}
+.faq .accordion-option .toggle-accordion.active:before {
+  content: "Collapse All";
 }
