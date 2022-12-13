@@ -5,23 +5,50 @@
         padding: 0px;
     }
 
-    .faq-item {
-        padding: 20px 30px;
-        margin: 0 auto;
-
-        @media (max-width: 768px) {
-            padding: 20px 0px;
-        }
-
-        .faq-item-answer {
-            display: none;
-            &.active {
-                display: block;
-            }
-        }
+    .accordion .accordion-header {
+        padding: 0.828rem;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
     }
 
-    .darker {
-        background-color: #fcfcfc;
+    .accordion .accordion-header span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .accordion .accordion-body {
+        padding: 0 0.828rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height ease 0.5s;
+    }
+
+    .accordion .accordion-body p {
+        border-bottom: none;
+        margin: 0.828rem 0;
+    }
+
+    .accordion.active .accordion-body {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .close span {
+        transition: ease 0.5s;
+        display: inline-block;
+        height: 12px;
+        width: 2px;
+        background-color: var(--dark-color);
+    }
+
+    .close span:nth-child(even) {
+        transform: rotate(90deg) translateY(6.7px);
+    }
+
+    .active .close span:nth-child(odd) {
+        opacity: 0;
+        visibility: hidden;
     }
 }
