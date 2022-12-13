@@ -85,8 +85,8 @@
     <section class="faq">
     <div class="container">
         <div class="accordion-option">
-            <h3 class="title">Lorem Ipsum</h3>
-            <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+            <h3 class="title">Most asked questions</h3>
+           
         </div>
         <div class="clearfix"></div>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -117,7 +117,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                             href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            How long is the delivery time?
+                            What song would make the best theme music for you?
                         </a>
                     </h4>
                 </div>
@@ -139,7 +139,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                             href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            What is our whisky made of?
+                            When you take notes, do you jot down ideas online or with a pen and paper?
                         </a>
                     </h4>
                 </div>
@@ -212,11 +212,6 @@
 
                     $(this).toggleClass("active");
 
-                    if (numPanelOpen == 0) {
-                        openAllPanels(accordionId);
-                    } else {
-                        closeAllPanels(accordionId);
-                    }
                 })
 
             });

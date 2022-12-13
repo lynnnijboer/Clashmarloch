@@ -468,9 +468,6 @@ body .image-block .row .text-block {
   padding: 200px 0;
 }
 
-.faq {
-  padding: 50px 0;
-}
 @media (max-width: 768px) {
   .faq {
     padding: 0px;
@@ -488,6 +485,9 @@ body .image-block .row .text-block {
 }
 .faq .panel-default > .panel-heading a {
   display: block;
+  padding: 10px 15px;
+}
+.faq .panel-body {
   padding: 10px 15px;
 }
 .faq .panel-default > .panel-heading a:after {
@@ -519,6 +519,9 @@ body .image-block .row .text-block {
   content: "+";
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+.faq .panel-title a {
+  color: black !important;
 }
 .faq .accordion-option {
   width: 100%;
